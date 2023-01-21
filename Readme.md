@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Кирилл Джусоев](https://up.htmlacademy.ru/htmlcss/36/user/2162711).
-* Наставник: `Неизвестно`.
+- Студент: [Кирилл Джусоев](https://up.htmlacademy.ru/htmlcss/36/user/2162711).
+- Наставник: Ирина Паршакова. (https://htmlacademy.ru/profile/id324893)
 
 ---
 
