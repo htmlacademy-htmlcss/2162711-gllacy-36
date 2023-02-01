@@ -7,13 +7,11 @@
 </head>
   <body>
     <header class="page-header">
+      <a class="navigation-link" href="#">
+        <img class="logo" src="images/logo.svg" alt="Логотип gllacy shop" />
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <img class="logo" src="#" alt="Логотип gllacy shop" />
-            </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -63,28 +61,37 @@
             </a>
           </li>
           <li class="preview-item">
-            <img src="#" alt="Пломбир с клубничным джемом">
+            <img src="images/title/ice-cream-title.png" alt="Пломбир с клубничным джемом">
           </li>
           <li class="preview-item">
             <a class="preview-link" href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
+          <li>
+            <img src="images/title/slide-show-1.png" alt="Сливочное мороженое со вкусом банана">
+          </li>
+          <li>
+            <img src="images/title/slide-show-2.png" alt="Карамельный пломбир с маршмеллоу">
+          </li>
         </ul>
         <ul class="social list">
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy">
-              <span visually-hidden>Телеграм</span>
+              <img src="images/social/telegram.svg" alt="Телеграм">
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
-              <span visually-hidden>В контакте</span>
+              <img src="images/social/vkontakte.svg" alt="В контакте">
+              <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span visually-hidden>youtube</span>
+              <img src="images/social/youtube.svg" alt="youtube">
+              <span class="visually-hidden">youtube</span>
             </a>
           </li>
         </ul>
@@ -119,7 +126,7 @@
       <section class="product">
         <ul class="product-list">
           <li class="product-item">
-            <img src="#" alt="Мороженное с малиной" />
+            <img class="product-image" src="images/catalog/catalog-raspberry.jpg" width="168px" height="168px" alt="Мороженное с малиной" />
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <b>310 ₽/кг</b>
@@ -128,7 +135,7 @@
             </a>
           </li>
           <li class="product-item">
-            <img src="#" alt="Мороженное с фисташковым вкусом" />
+            <img class="product-image" src="images/catalog/catalog-pistachio.jpg" width="168px" height="168px" alt="Мороженное с фисташковым вкусом" />
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b>340 ₽/кг</b>
@@ -137,7 +144,7 @@
             </a>
           </li>
           <li class="product-item">
-            <img src="#" alt="Мороженное с черникой" />
+            <img class="product-image" src="images/catalog/catalog-blueberry.jpg" width="168px" height="168px" alt="Мороженное с черникой" />
             <h3>Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
             <b>330 ₽/кг</b>
@@ -146,7 +153,7 @@
             </a>
           </li>
           <li class="product-item">
-            <img src="#" alt="Мороженное со вкусом Бабл-гам" />
+            <img class="product-image" src="images/catalog/catalog-bubble-gum.jpg" width="168px" height="168px" alt="Мороженное со вкусом Бабл-гам" />
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b>320 ₽/кг</b>
@@ -160,7 +167,7 @@
         <ul class="about-list">
           <li>
             <figure>
-              <img class="mini-image" src="#" />
+              <img class="mini-image" src="images/advantages/ice-cream.svg" />
               <figcaption>Всё наше мороженое изготавливается на собственном производстве с
               использованием современного оборудования и проверенных временем
               технологий.</figcaption>
@@ -168,14 +175,14 @@
           </li>
           <li>
             <figure>
-              <img class="mini-image" src="#" />
+              <img class="mini-image" src="images/advantages/cow.svg" />
               <figcaption>Закупка ингредиентов производится только у проверенных фермерских
               хозяйств, с которыми нас связывает долговременное сотрудничество.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img class="mini-image" src="#" />
+              <img class="mini-image" src="images/advantages/leaf.svg" />
               <figcaption>Для приготовления мороженого используются сливки и молоко
               высочайшего качества. Все ингредиенты и добавки произведены из
               натурального сырья.</figcaption>
@@ -183,7 +190,7 @@
           </li>
           <li>
             <figure>
-              <img class="mini-image" src="#" />
+              <img class="mini-image" src="images/advantages/thermometer.svg" />
               <figcaption>Доставка нашего мороженого осуществляется в специальном термопаке,
               который не даёт мороженому растаять и позволяет сохранить
               превосходный вкус.</figcaption>
@@ -219,6 +226,7 @@
           <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <label>
             Дата
+            <img class="icon" src="images/union.svg" alt="">
             <input type="date" placeholder="01.04.2020" />
           </label>
           <label>
@@ -227,6 +235,7 @@
           </label>
           <label>
             Адрес
+            <img class="icon" src="images/union.svg" alt="">
             <input type="text" placeholder="ул. Большая Конюшенная, 19/8" />
           </label>
           <button class="button" type="submit">Отправить</button>
@@ -259,17 +268,17 @@
         <ul class="social list">
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy">
-              <span visually-hidden>Телеграм</span>
+              <img src="images/social/telegram.svg" alt="Телеграм">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
-              <span visually-hidden>В контакте</span>
+              <img src="images/social/vkontakte.svg" alt="В контакте">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span visually-hidden>youtube</span>
+              <img src="images/social/youtube.svg" alt="youtube">
             </a>
           </li>
         </ul>
@@ -277,6 +286,7 @@
       <section class="copyright">
         <ul class="copyright-list">
           <li class="copyright-item">
+            <img src="images/heart.svg" alt="сердце">
             <a class="copyright-link" href="#"><b>Для поставщиков</b></a>
           </li>
           <li class="copyright-item">
@@ -294,7 +304,7 @@
         <ul class="information-list">
           <li class="information-item">
             <a class="information-link" href="https://htmlacademy.ru">
-              <img src="#" alt="Логотип html academy.">
+              <img src="images/logo_htmlacademy.svg" alt="Логотип html academy.">
             </a>
           </li>
           <li class="information-item">
