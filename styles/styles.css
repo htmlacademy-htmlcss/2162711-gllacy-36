@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "inter";
+  src: url(inter-400.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(inter-400.woff2);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(inter-700.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(inter-700.woff2);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(inter-900.woff2);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(inter-900.woff2);
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "inter", "Arial", sans-serif;
+  background-color: blue;
+}
+
+.search-icon {
+  background-image: url("../images/icon/search.svg");
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+}
+
+.login-icon {
+  background-image: url("../images/icon/login.svg");
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+}
+
+.basket-icon {
+  background-image: url("../images/icon/basket.svg");
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+}
+
+.arrow-left {
+  background-image: url("../images/arrow-left.svg");
+  width: 38px;
+  height: 38px;
+  background-size: cover;
+}
+
+.arrow-right {
+  background-image: url("../images/icon/arrow-right.svg");
+  width: 38px;
+  height: 38px;
+  background-size: cover;
+}
+
+.telegram-icon {
+  background-image: url("../images/social/telegram.svg");
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.vk-icon {
+  background-image: url("../images/social/vkontakte.svg");
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.youtube-icon {
+  background-image: url("../images/social/youtube.svg");
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.raspberry-gift {
+  background-image: url("../images/gifts/raspberry.png");
+  width: 570px;
+  height: 268px;
+  background-repeat: no-repeat;
+}
+
+.marshmallow-gift {
+  background-image: url("../images/gifts/marshmallow.png");
+  width: 570px;
+  height: 268px;
+  background-repeat: no-repeat;
+}
+
+.basket-red-icon {
+  background-image: url("../images/icon/basket-red.svg");
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}
+
+.ice-cream {
+  background-image: url("../images/advantages/ice-cream.svg");
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.cow {
+  background-image: url("../images/advantages/cow.svg");
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.leaf {
+  background-image: url("../images/advantages/leaf.svg");
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.thermometer {
+  background-image: url("../images/advantages/thermometer.svg");
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.info-icon {
+  background-image: url(../images/icon/union.svg);
+  width: 12px;
+  height: 12px;
+  background-size: cover;
+}
+
+.background-icon {
+  background-image: url(../images/icon/pagination-item.svg);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
