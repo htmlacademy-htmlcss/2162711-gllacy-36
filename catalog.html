@@ -34,13 +34,13 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-login" href="#">
               <div class="login-icon"></div>
               Вход
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-basket" href="#">
               <div class="basket-icon"></div>
               2 товара
             </a>
@@ -49,6 +49,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <h1 class="visually-hidden">Каталог</h1>
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -67,7 +68,7 @@
             <span class="breadcrumbs-text">Сливочное мороженое</span>
           </li>
         </ul>
-        <h1 class="inner-header-title">Сливочное мороженое</h1>
+        <h2 class="inner-header-title">Сливочное мороженое</h2>
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -76,9 +77,9 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">по популярности</option>
-              <option value="cheap">сначала дешёвое</option>
-              <option value="expensive">сначала дорогое</option>
+              <option class="control-option" value="popular">по популярности</option>
+              <option class="control-option" value="cheap">сначала дешёвое</option>
+              <option class="control-option" value="expensive">сначала дорогое</option>
             </select>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -238,7 +239,7 @@
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-image" src="images/catalog/catalog-strawberry.jpg" width="168px" height="168px" alt="Сливочный пломбир с клубничным вкусом">
-              <h3 class="product-card-title">Клубничка/h3>
+              <h3 class="product-card-title">Клубничка</h3>
             </a>
             <p>Сливочный пломбир с клубничным вкусом</p>
             <strong class="product-card-price">300 ₽/кг</strong>
@@ -298,7 +299,7 @@
         </ul>
       </section>
       <section>
-        <a href="#">Показать еще</a>
+        <button class="catalog-button" type="button">Показать еще</button>
         <a class="catalog-navigation-link" href="#">
           <span class="visually-hidden">Предыдущая страница</span>
         </a>
@@ -351,7 +352,7 @@
         <ul class="copyright-list">
           <li class="copyright-item">
             <img src="images/heart.svg" width="13px" height="12px" alt="сердце">
-            <a class="copyright-link" href="#">Для поставщиков</a>
+            <a class="copyright-link bold" href="#">Для поставщиков</a>
           </li>
           <li class="copyright-item">
             <a class="copyright-link" href="#"><p>О производстве</p></a>
@@ -372,7 +373,7 @@
             </a>
           </li>
           <li class="information-item">
-            <p>Сделано в .html academy © 2021</p>
+            <p class="information-paragraph">Сделано в <span class="underline">.html academy</span> © 2021</p>
           </li>
         </ul>
       </div>
