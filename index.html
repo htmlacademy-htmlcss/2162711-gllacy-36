@@ -48,37 +48,40 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
       <h1 class="visually-hidden">gllacy shop</h1>
       <section class="preview-main">
         <h2 class="preview-title">Нежный пломбир с клубничным джемом</h2>
         <ul class="preview-list">
           <li class="preview-item">
-            <p>Натуральное мороженое из свежих сливок
+            <p class="preview-paragraph">Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           </li>
           <li class="preview-item">
             <a class="preview-link" href="#">Заказать</a>
           </li>
-          <li class="preview-item">
-            <a class="preview-link" href="#">
+        </ul>
+        <ul class="gallery-list">
+          <li class="gallery-item arrow-left-icon">
+            <a class="gallery-link" href="#">
               <div class="arrow-left"></div>
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
-          <li class="preview-item">
+          <li class="gallery-item">
             <img src="images/title/ice-cream-title.png" width="327px" height="507px" alt="Пломбир с клубничным джемом">
           </li>
-          <li class="preview-item">
-            <a class="preview-link" href="#">
+          <li class="gallery-item arrow-right-icon">
+            <a class="gallery-link" href="#">
               <div class="arrow-right"></div>
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
-          <li>
+          <li class="gallery-item creamy">
             <img src="images/title/slide-show-1.png" width="100px" height="150px" alt="Сливочное мороженое со вкусом банана">
           </li>
-          <li>
+          <li class="gallery-item caramel">
             <img src="images/title/slide-show-2.png" width="100px" height="150px" alt="Карамельный пломбир с маршмеллоу">
           </li>
         </ul>
@@ -104,31 +107,31 @@
         </ul>
       </section>
       <section class="gift">
-        <h2>Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="gift-header">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="gift-list">
-          <li class="gift-item">
+          <li class="gift-item-raspberries">
             <h3 class="gif-title">Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
+            <p class="gift-paragraph">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.</p>
               <a class="gift-link" href="#">Хочу подарок</a>
               <div class="raspberry-gift"></div></li>
-            <li class="gift-item">
+            <li class="gift-item-marshmallow">
               <h3 class="gif-title">Маршмеллоу даром!</h3>
-              <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
+              <p class="gift-paragraph">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
                 зефирок совершенно бесплатно.</p>
                 <a class="gift-link" href="#">Хочу подарок</a>
                 <div class="marshmallow-gift"></div></li>
             </ul>
       </section>
       <section class="product">
-        <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <h2 class="product-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-image" src="images/catalog/catalog-raspberry.jpg" width="168px" height="168px" alt="Сливочное мороженое с малиновым джемом">
+              <img class="product-card-image" src="images/catalog/catalog-raspberry.jpg" width="180px" height="180px" alt="Сливочное мороженое с малиновым джемом">
               <h3 class="product-card-title">Малинка</h3>
             </a>
-            <p>Сливочное мороженое с малиновым джемом</p>
+            <p class="product-paragraph">Сливочное мороженое с малиновым джемом</p>
             <strong class="product-card-price">310 ₽/кг</strong>
             <a class="product-card-button button" href="#">
               <div class="basket-red-icon"></div>
@@ -137,10 +140,10 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-image" src="images/catalog/catalog-pistachio.jpg" width="168px" height="168px" alt="Фисташковый пломбир с кусочками шоколада">
+              <img class="product-card-image" src="images/catalog/catalog-pistachio.jpg" width="168px" height="168px" alt="Фисташковый пломбир с кусочками шоколада">
               <h3 class="product-card-title">Фисташка</h3>
             </a>
-            <p>Фисташковый пломбир с кусочками шоколада/p>
+            <p class="product-paragraph">Фисташковый пломбир с кусочками шоколада</p>
             <strong class="product-card-price">340 ₽/кг</strong>
             <a class="product-card-button button" href="#">
               <div class="basket-red-icon"></div>
@@ -149,10 +152,10 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-image" src="images/catalog/catalog-blueberry.jpg" width="168px" height="168px" alt="Крем-брюле с черничным джемом">
+              <img class="product-card-image" src="images/catalog/catalog-blueberry.jpg" width="168px" height="168px" alt="Крем-брюле с черничным джемом">
               <h3 class="product-card-title">Черника</h3>
             </a>
-            <p>Крем-брюле с черничным джемом</p>
+            <p class="product-paragraph">Крем-брюле с черничным джемом</p>
             <strong class="product-card-price">330 ₽/кг</strong>
             <a class="product-card-button button" href="#">
               <div class="basket-red-icon"></div>
@@ -161,10 +164,10 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-image" src="images/catalog/catalog-bubble-gum.jpg" width="168px" height="168px" alt="Ванильный пломбир бабл-гам со сладкой посыпкой">
+              <img class="product-card-image" src="images/catalog/catalog-bubble-gum.jpg" width="168px" height="168px" alt="Ванильный пломбир бабл-гам со сладкой посыпкой">
               <h3 class="product-card-title">Бабл-гам</h3>
             </a>
-            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p class="product-paragraph">Ванильный пломбир со сладкой посыпкой</p>
             <strong class="product-card-price">320 ₽/кг</strong>
             <a class="product-card-button button" href="#">
               <div class="basket-red-icon"></div>
@@ -203,6 +206,7 @@
           </ul>
         </div>
       </section>
+      <div class="blog-news">
       <article class="blog">
         <h2 class="visually-hidden">Блог</h2>
         <p>Новое в нашем блоге</p>
@@ -225,6 +229,7 @@
           </form>
         </div>
       </section>
+      </div>
       <section class="delivery">
         <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в
@@ -250,6 +255,7 @@
         </form>
       </section>
       <section class="info">
+        <h2 class="visually-hidden">Обратная связь</h2>
         <ul class="info-list">
           <li class="info-item">
             <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -266,9 +272,15 @@
           <li class="info-item">
             <p class="work-time">(с 10 до 20 ежедневно)</p>
           </li>
-          <button class="button" type="button">Форма обратной связи</button>
+          <li class="info-item">
+            <button class="button" type="button">Форма обратной связи</button>
+          </li>
+        </ul>
       </section>
+      </div>
+    </main>
     <footer class="page-footer">
+      <div class="page-footer-container">
       <nav class="social">
         <ul class="social-list">
           <li class="social-item">
@@ -319,6 +331,7 @@
             <p class="information-paragraph">Сделано в <span class="underline">.html academy</span> © 2021</p>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
   </body>
