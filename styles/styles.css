@@ -102,7 +102,8 @@ body {
   background-image: url("../images/icon/login.svg");
   width: 13px;
   height: 13px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0;
   margin-right: 6px;
 }
@@ -111,7 +112,8 @@ body {
   background-image: url("../images/icon/basket.svg");
   width: 13px;
   height: 13px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0;
   margin-right: 6px;
 }
@@ -120,7 +122,8 @@ body {
   background-image: url("../images/icon/arrow-left.svg");
   width: 38px;
   height: 38px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .arrow-right {
@@ -871,10 +874,6 @@ body {
   text-decoration: none;
 }
 
-.product-card {
-  background-color: #fcfcfc;
-}
-
 .product-card strong {
   font-weight: 700;
   font-size: 20px;
@@ -1142,9 +1141,9 @@ body {
 
 .product-card {
   width: 270px;
-  height: 281px;
   border-radius: 8px;
   justify-content: center;
+  background-color: #fcfcfc;
 }
 
 .product-card-image {
@@ -1325,8 +1324,7 @@ body {
 
 .product-list-catalog {
   display: grid;
-  grid-template-columns: 270px 270px 270px 270px;
-  grid-template-rows: 280px 280px 280px;
+  grid-template-columns: repeat(4, 270px);
   margin: 0;
   padding: 0;
   column-gap: 30px;
@@ -1344,7 +1342,8 @@ body {
 
 .catalog-navigation-left {
   background-image: url("../images/icon/pagination-left.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 6px;
   height: 10px;
   margin: 0;
@@ -1353,7 +1352,8 @@ body {
 
 .catalog-navigation-right {
   background-image: url("../images/icon/pagination-right.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 6px;
   height: 10px;
   margin: 0;
