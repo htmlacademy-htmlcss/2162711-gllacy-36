@@ -106,13 +106,6 @@ body {
   margin-right: 8px;
 }
 
-.search-icon {
-  background-image: url("../images/icon/search.svg");
-  width: 13px;
-  height: 13px;
-  background-size: cover;
-}
-
 .login-icon {
   background-image: url("../images/icon/login.svg");
   width: 13px;
@@ -188,28 +181,64 @@ body {
   background-image: url("../images/icon/arrow/disabled-right.svg");
 }
 
-.telegram-icon {
+.telegram {
   background-image: url("../images/social/telegram.svg");
-  width: 28px;
-  height: 28px;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
   margin: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
 }
 
-.vk-icon {
-  background-image: url("../images/social/vkontakte.svg");
-  width: 28px;
-  height: 28px;
-  background-size: cover;
-  margin: 0;
+.telegram:hover {
+  background-color: #2d3440;
 }
 
-.youtube-icon {
+.telegram:active {
+  background-image: url("../images/social/telegram-grey.svg");
+  background-color: #2d3440;
+}
+
+.telegram:focus {
+  background-color: #2d3440;
+  border-color: #2d3440;
+}
+
+.vkontakte {
+  display: block;
+  background-image: url("../images/social/vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.vkontakte:focus {
+  background-color: #2d3440;
+  border-color: #2d3440;
+}
+
+.youtube {
+  display: block;
   background-image: url("../images/social/youtube.svg");
-  width: 28px;
-  height: 28px;
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
   margin: 0;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.youtube:focus {
+  background-color: #2d3440;
+  border-color: #2d3440;
 }
 
 .raspberry-gift {
@@ -621,11 +650,31 @@ body {
 }
 
 .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  background-image: url("../images/icon/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
   margin: 0;
-  padding: 9px;
+  padding: 8px;
+}
+
+.search:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.search:focus {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2d3440;
+}
+
+.search:active {
+  background-color: #fcfcfc;
 }
 
 /* Main */
