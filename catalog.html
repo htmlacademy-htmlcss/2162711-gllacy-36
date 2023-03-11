@@ -32,25 +32,57 @@
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item-phone">
               <a class="contacts-phone" href="tel:88005558628"
                 >+7 800 555-86-28</a
               >
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link search" href="#">
+              <a class="search-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-login" href="#">
-                <div class="login-icon"></div>
+                <svg
+                  class="login-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="#2D3440"
+                    fill-rule="evenodd"
+                    d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
                 <span class="navigation-user-text">Вход</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-basket" href="#">
-                <div class="basket-icon"></div>
+                <svg
+                  class="basket-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="#2D3440"
+                    fill-rule="evenodd"
+                    d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
                 <span class="navigation-user-text">2 товара</span>
               </a>
             </li>
@@ -66,12 +98,10 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
-            <li></li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Каталог</a>
             </li>
-            <li></li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-text-item">
               <span class="breadcrumbs-text">Сливочное мороженое</span>
             </li>
           </ul>
@@ -213,9 +243,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button filter-button" type="submit">
-                Применить
-              </button>
+              <button class="filter-button" type="submit">Применить</button>
             </div>
           </form>
           <ul class="product-list-catalog">
@@ -235,7 +263,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">310 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -256,7 +284,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">340 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -275,7 +303,7 @@
               <p class="product-paragraph">Крем-брюле с черничным джемом</p>
               <div class="product-card-container">
                 <strong class="product-card-price">330 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -296,7 +324,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">320 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -317,7 +345,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">330 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -338,7 +366,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">340 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -357,7 +385,7 @@
               <p class="product-paragraph">Классический шоколадный пломбир</p>
               <div class="product-card-container">
                 <strong class="product-card-price">270 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -378,7 +406,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">300 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -397,7 +425,7 @@
               <p class="product-paragraph">Освежающий лимонный сорбет</p>
               <div class="product-card-container">
                 <strong class="product-card-price">310 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -418,7 +446,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">320 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -439,7 +467,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">360 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -458,7 +486,7 @@
               <p class="product-paragraph">Классическое крем-брюле</p>
               <div class="product-card-container">
                 <strong class="product-card-price">280 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -468,7 +496,7 @@
         <section>
           <div class="pagination-container">
             <h2 class="visually-hidden">Пагинация</h2>
-            <button class="catalog-button" type="button">Показать еще</button>
+            <button class="main-button" type="button">Показать еще</button>
             <div class="pagination-list">
               <a class="catalog-navigation-link" href="#">
                 <div class="catalog-navigation-left"></div>
@@ -476,19 +504,19 @@
               </a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation-item">
-                  <a class="circle pagination-namber" href="#">1</a>
+                  <a class="circle-pagination-number" href="#">1</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">2</a>
+                  <a class="pagination-number" href="#">2</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">3</a>
+                  <a class="pagination-number" href="#">3</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">4</a>
+                  <a class="pagination-number" href="#">4</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">5</a>
+                  <a class="pagination-number" href="#">5</a>
                 </li>
               </ul>
               <a class="catalog-navigation-link" href="#">
@@ -529,23 +557,16 @@
         </nav>
         <nav class="copyright">
           <ul class="copyright-list">
-            <li class="copyright-item suppliers-item">
-              <img
-                class="suppliers-image"
-                src="images/icon/heart.svg"
-                width="13px"
-                height="12px"
-                alt="сердце."
-              />
-              <a class="copyright-link suppliers" href="#">Для поставщиков</a>
+            <li class="heart-item">
+              <a class="copyright-link heart-link" href="#">Для поставщиков</a>
             </li>
-            <li class="copyright-item documentation-item">
+            <li>
               <a class="copyright-link" href="#">Наши документы</a>
             </li>
-            <li class="copyright-item production-item">
+            <li class="production">
               <a class="copyright-link" href="#">О производстве</a>
             </li>
-            <li class="copyright-item standards-item">
+            <li>
               <a class="copyright-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
