@@ -127,6 +127,7 @@ body {
   bottom: 0;
   left: 16px;
   margin: auto;
+  fill: #2d3440;
 }
 
 .navigation-basket:focus .basket-icon {
@@ -1121,9 +1122,7 @@ body {
   align-self: center;
   background-color: #fcfcfc80;
   border-radius: 30px;
-}
-
-.navigation-user-item {
+  position: relative;
   margin-left: 16px;
 }
 
@@ -1453,36 +1452,6 @@ body {
   padding: 6px 16px 6px 38px;
 }
 
-.navigation-basket {
-  display: flex;
-  position: relative;
-  align-items: center;
-  font-size: 14px;
-  line-height: 20px;
-  color: #2d3440;
-  text-decoration: none;
-  margin: 0;
-  padding: 6px 16px 6px 38px;
-  border-radius: 30px;
-}
-
-.navigation-basket:hover {
-  background-color: rgba(252, 252, 252, 0.5);
-}
-
-.navigation-basket:focus {
-  background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #000000;
-  padding: 4px 14px 4px 36px;
-  outline: none;
-}
-
-.navigation-basket:active {
-  background-color: #fcfcfc;
-  padding: 6px 16px 6px 38px;
-  border: none;
-}
-
 /* СТРАНИЦА КАТАЛОГА */
 
 .breadcrumbs {
@@ -1516,7 +1485,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 823px;
   margin: 0;
   margin-bottom: 44px;
 }
@@ -1537,17 +1505,15 @@ body {
 }
 
 .filter-button {
-  width: 185px;
-  height: 36px;
   background-color: rgba(252, 252, 252, 0.3);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
-  margin: 0;
   margin-left: 16px;
   border: 2px solid #fcfcfc;
   border-radius: 20px;
+  padding: 8px 52px;
 }
 
 .filter-button:hover {
@@ -1788,7 +1754,7 @@ body {
 .range-background {
   width: 164px;
   background-color: rgba(252, 252, 252, 0.3);
-  padding: 19px 16px 17px 16px;
+  padding: 17px 16px 17px 16px;
   border-radius: 20px;
 }
 
@@ -1869,7 +1835,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   padding: 0 0 0 16px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .range-input {
@@ -1886,6 +1852,10 @@ body {
   padding: 8px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+}
+
+.catalog-filter-list.filter-fillers {
+  padding: 10px 24px;
 }
 
 .fillers {
@@ -1920,4 +1890,180 @@ body {
 .control-label {
   display: flex;
   align-items: center;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icon/checkbox-active.svg");
+}
+
+.control:hover .control-mark {
+  background-image: url("../images/icon/checkbox-white.svg");
+}
+
+.control:hover .control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icon/checkbox-white-active.svg");
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark {
+  background-image: url("../images/icon/checkbox-grey.svg");
+}
+
+.control-input[type="checkbox"]:disabled:checked + .control-mark {
+  background-image: url("../images/icon/checkbox-grey-active.svg");
+}
+
+.control:hover
+  .control-input[type="checkbox"]:disabled:checked
+  + .control-mark {
+  background-image: url("../images/icon/checkbox-grey-active.svg");
+}
+
+.control-input[type="radio"] + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio.svg");
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio-active.svg");
+  background-repeat: no-repeat;
+}
+
+.control:hover .control-input[type="radio"] + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio-white.svg");
+  background-repeat: no-repeat;
+}
+
+.control:hover .control-input[type="radio"]:checked + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio-white-active.svg");
+  background-repeat: no-repeat;
+}
+
+.control .control-input[type="radio"]:disabled + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio-grey.svg");
+  background-repeat: no-repeat;
+}
+
+.control .control-input[type="radio"]:checked:disabled + .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon/radio-grey-active.svg");
+  background-repeat: no-repeat;
+}
+
+/* Попавер */
+
+.popover {
+  width: 440px;
+  box-shadow: (0 15px 40px rgba(45, 52, 64, 0.12));
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 48px;
+  min-height: 190px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 2;
+}
+
+.popover-close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 115px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  padding: 0 0 0 22px;
+  background-image: url("../images/icon/basket-white.svg");
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.popover-close-button:hover {
+  opacity: 0.6;
+}
+
+.popover-close-button:focus {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  outline: none;
+  background-position: left 14px center;
+}
+
+.popover-close-button:active {
+  opacity: 0.3;
+}
+
+.popover-closed {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  margin: 0;
+  padding: 6px 16px 6px 38px;
+  border-radius: 30px;
+}
+
+.popover-closed:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.popover-closed:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+  padding: 4px 14px 4px 36px;
+  outline: none;
+}
+
+.popover-closed:active {
+  background-color: #fcfcfc;
+  padding: 6px 16px 6px 38px;
+  border: none;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
 }
