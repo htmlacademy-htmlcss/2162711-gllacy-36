@@ -23,6 +23,36 @@
               <a class="navigation-link header-link" href="catalog.html"
                 >Каталог</a
               >
+              <div class="popover popover-catalog">
+                <button class="catalog-close-button" type="button">
+                  Каталог
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <ul class="popover-catalog-list">
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link strong-link" href="#"
+                        >Новинки</a
+                      >
+                    </li>
+                    <li>
+                      <span class="catalog-line"></span>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -41,6 +71,25 @@
               <a class="search-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
+              <div class="popover popover-search">
+                <button class="search-close-button" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Поиск по сайту</h2>
+                  <form
+                    class="popover-login-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <input
+                      class="popover-search-input popover-input"
+                      type="text"
+                      placeholder="Поиск по сайту"
+                    />
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-login" href="#">
@@ -63,9 +112,48 @@
                 </svg>
                 <span class="navigation-user-text">Вход</span>
               </a>
+              <div class="popover popover-login">
+                <button class="login-close-button" type="button">
+                  Вход
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form
+                    class="popover-login-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <input
+                      class="popover-login-input popover-input"
+                      type="text"
+                      value="email@example.com"
+                    />
+                    <input
+                      class="popover-login-input popover-input"
+                      type="password"
+                      value="123456"
+                    />
+                    <div class="popover-login-container">
+                      <button
+                        class="additional-button popover-login-button"
+                        type="submit"
+                      >
+                        Войти
+                      </button>
+                      <div class="popover-link-container">
+                        <a class="popover-login-link" href="#"
+                          >Забыли пароль?</a
+                        >
+                        <a class="popover-login-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-basket" href="#">
+              <a class="popover-closed popover-active" href="#">
                 <svg
                   class="basket-icon"
                   aria-hidden="true"
@@ -77,7 +165,6 @@
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill="#2D3440"
                     fill-rule="evenodd"
                     d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"
                     clip-rule="evenodd"
@@ -85,6 +172,68 @@
                 </svg>
                 <span class="navigation-user-text">2 товара</span>
               </a>
+              <div class="popover popover-cart">
+                <button class="popover-close-button button-light" type="button">
+                  2 товара
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="popover-content-list">
+                    <li class="popover-content-item">
+                      <img
+                        class="popover-image"
+                        src="images/catalog/catalog-raspberry.jpg"
+                        width="46px"
+                        height="46px"
+                        alt="малиновое мороженое."
+                      />
+                      <div class="popover-text-container">
+                        <h3 class="popover-content-title">Малинка</h3>
+                        <p class="popover-content-paragraph">1 кг х 310 ₽</p>
+                      </div>
+                      <strong class="popover-price">310 ₽</strong>
+                      <button class="popover-button"></button>
+                    </li>
+                    <li class="popover-content-item">
+                      <img
+                        class="popover-image"
+                        src="images/catalog/catalog-bubble-gum.jpg"
+                        width="46px"
+                        height="46px"
+                        alt="мороженое со вкусом бабл-гам."
+                      />
+                      <div class="popover-text-container">
+                        <h3 class="popover-content-title">Бабл-гам</h3>
+                        <p class="popover-content-paragraph">1,5 кг х 320 ₽</p>
+                      </div>
+                      <strong class="popover-price">480 ₽</strong>
+                      <button class="popover-button"></button>
+                    </li>
+                  </ul>
+                  <form
+                    class="popover-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <button class="additional-button" type="submit">
+                      Оформить заказ
+                    </button>
+                    <label class="popover-label">
+                      Итого:
+                      <input class="cart-input" type="number" value="790" />
+                      ₽
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="popover-cart-empty popover">
+                <h2 class="popover-empty-title">Ваша корзина пока пуста</h2>
+                <button class="popover-close-button button-empty" type="button">
+                  Нет товаров
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
             </li>
           </ul>
         </nav>
@@ -427,17 +576,45 @@
             </p>
             <div class="date-phone">
               <div class="date-container">
-                <label class="delivery-label-date">
-                  <div class="date-icon">
+                <span class="delivery-label-date">
+                  <label class="delivery-label-date" for="date-label">
                     Дата
-                    <div class="info-icon"></div>
-                  </div>
-                  <input
-                    class="date-input delivery-input"
-                    type="text"
-                    placeholder="01.04.2020"
-                  />
-                </label>
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg
+                        class="tooltip-icon"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_21001_608)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.00026 2.12502C4.30774 2.12502 2.12502 4.30774 2.12502 7.00026C2.12502 9.69278 4.30774 11.8755 7.00026 11.8755C9.69278 11.8755 11.8755 9.69278 11.8755 7.00026C11.8755 4.30774 9.69278 2.12502 7.00026 2.12502ZM0.791687 7.00026C0.791687 3.57136 3.57136 0.791687 7.00026 0.791687C10.4292 0.791687 13.2088 3.57136 13.2088 7.00026C13.2088 10.4292 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4292 0.791687 7.00026ZM7.00007 6.33334C7.36826 6.33334 7.66674 6.63182 7.66674 7.00001V9.21677C7.66674 9.58496 7.36826 9.88344 7.00007 9.88344C6.63188 9.88344 6.33341 9.58496 6.33341 9.21677V7.00001C6.33341 6.63182 6.63188 6.33334 7.00007 6.33334ZM7.00007 4.11659C6.63188 4.11659 6.33341 4.41506 6.33341 4.78325C6.33341 5.15144 6.63188 5.44992 7.00007 5.44992H7.0059C7.37409 5.44992 7.67257 5.15144 7.67257 4.78325C7.67257 4.41506 7.37409 4.11659 7.0059 4.11659H7.00007Z"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_21001_608">
+                            <rect width="14" height="14" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text"
+                      >Укажите желаемую дату доставки
+                    </span>
+                  </span>
+                </span>
+                <input
+                  class="date-input delivery-input"
+                  type="text"
+                  placeholder="01.04.2020"
+                  id="date-label"
+                />
               </div>
               <label class="delivery-label-phone">
                 <div class="phone-container">
@@ -450,18 +627,50 @@
                 </div>
               </label>
             </div>
-            <label class="delivery-label-address">
-              <div class="address-container">
-                Адрес
-                <div class="info-icon"></div>
-              </div>
-              <input
-                class="address-input delivery-input"
-                type="text"
-                placeholder="ул. Большая Конюшенная, 19/8"
-              />
-            </label>
-            <button class="button delivery-button" type="submit">
+            <span class="delivery-label-address">
+              <label class="delivery-label-address" for="address-label"
+                >Адрес</label
+              >
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg
+                    class="tooltip-icon"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_21001_608)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.00026 2.12502C4.30774 2.12502 2.12502 4.30774 2.12502 7.00026C2.12502 9.69278 4.30774 11.8755 7.00026 11.8755C9.69278 11.8755 11.8755 9.69278 11.8755 7.00026C11.8755 4.30774 9.69278 2.12502 7.00026 2.12502ZM0.791687 7.00026C0.791687 3.57136 3.57136 0.791687 7.00026 0.791687C10.4292 0.791687 13.2088 3.57136 13.2088 7.00026C13.2088 10.4292 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4292 0.791687 7.00026ZM7.00007 6.33334C7.36826 6.33334 7.66674 6.63182 7.66674 7.00001V9.21677C7.66674 9.58496 7.36826 9.88344 7.00007 9.88344C6.63188 9.88344 6.33341 9.58496 6.33341 9.21677V7.00001C6.33341 6.63182 6.63188 6.33334 7.00007 6.33334ZM7.00007 4.11659C6.63188 4.11659 6.33341 4.41506 6.33341 4.78325C6.33341 5.15144 6.63188 5.44992 7.00007 5.44992H7.0059C7.37409 5.44992 7.67257 5.15144 7.67257 4.78325C7.67257 4.41506 7.37409 4.11659 7.0059 4.11659H7.00007Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_21001_608">
+                        <rect width="14" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="tooltip-text"
+                  >Введите название улицы, дома и квартиры
+                </span>
+              </span>
+            </span>
+            <input
+              class="address-input delivery-input"
+              type="text"
+              placeholder="ул. Большая Конюшенная, 19/8"
+              id="address-label"
+            />
+
+            <button
+              class="additional-button delivery-form-button"
+              type="submit"
+            >
               Отправить
             </button>
           </form>
@@ -565,5 +774,58 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-connection">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="field-group">
+              <label class="visually-hidden" for="connection-form-input"
+                >Имя и фамилия</label
+              >
+              <input
+                class="connection-input connection-style"
+                name="connection-name"
+                placeholder="Имя и фамилия"
+                id="connection-form-input"
+                type="text"
+              />
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="connection-mail">Email</label>
+              <input
+                class="connection-input connection-style"
+                type="email"
+                id="connection-mail"
+                name="connection-mail"
+                placeholder="email@example.com"
+              />
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="connection-text"
+                >Поле для обратной связи</label
+              >
+              <textarea
+                class="connection-textarea connection-style"
+                id="connection-text"
+                name="connection-mail"
+              >
+В свободной форме
+              </textarea>
+            </p>
+            <button class="additional-button connection-button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
