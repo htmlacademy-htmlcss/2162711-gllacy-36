@@ -2605,6 +2605,11 @@ body {
   fill: #ff2f64;
 }
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 .tooltip-text {
   position: absolute;
   top: -12px;
