@@ -20,9 +20,37 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link header-link" href="catalog.html"
-                >Каталог</a
-              >
+              <a class="navigation-link header-link" href="#">Каталог</a>
+              <div class="popover popover-catalog">
+                <button class="catalog-close-button" type="button">
+                  Каталог
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <ul class="popover-catalog-list">
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link strong-link" href="#"
+                        >Новинки</a
+                      >
+                    </li>
+                    <li>
+                      <span class="catalog-line"></span>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -32,27 +60,178 @@
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item-phone">
               <a class="contacts-phone" href="tel:88005558628"
                 >+7 800 555-86-28</a
               >
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link search" href="#">
+              <a class="search-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
+              <div class="popover popover-search">
+                <button class="search-close-button" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Поиск по сайту</h2>
+                  <form
+                    class="popover-login-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <input
+                      class="popover-search-input popover-input"
+                      type="text"
+                      placeholder="Поиск по сайту"
+                    />
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-login" href="#">
-                <div class="login-icon"></div>
+                <svg
+                  class="login-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="#2D3440"
+                    fill-rule="evenodd"
+                    d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
                 <span class="navigation-user-text">Вход</span>
               </a>
+              <div class="popover popover-login">
+                <button class="login-close-button" type="button">
+                  Вход
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form
+                    class="popover-login-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <input
+                      class="popover-login-input popover-input"
+                      type="text"
+                      value="email@example.com"
+                    />
+                    <input
+                      class="popover-login-input popover-input"
+                      type="password"
+                      value="123456"
+                    />
+                    <div class="popover-login-container">
+                      <button
+                        class="additional-button popover-login-button"
+                        type="submit"
+                      >
+                        Войти
+                      </button>
+                      <div class="popover-link-container">
+                        <a class="popover-login-link" href="#"
+                          >Забыли пароль?</a
+                        >
+                        <a class="popover-login-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-basket" href="#">
-                <div class="basket-icon"></div>
+              <a class="popover-closed popover-active" href="#">
+                <svg
+                  class="basket-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
                 <span class="navigation-user-text">2 товара</span>
               </a>
+              <div class="popover popover-cart">
+                <button class="popover-close-button button-light" type="button">
+                  2 товара
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="popover-content-list">
+                    <li class="popover-content-item">
+                      <img
+                        class="popover-image"
+                        src="images/catalog/catalog-raspberry.jpg"
+                        width="46px"
+                        height="46px"
+                        alt="малиновое мороженое."
+                      />
+                      <div class="popover-text-container">
+                        <h3 class="popover-content-title">Малинка</h3>
+                        <p class="popover-content-paragraph">1 кг х 310 ₽</p>
+                      </div>
+                      <strong class="popover-price">310 ₽</strong>
+                      <button class="popover-button"></button>
+                    </li>
+                    <li class="popover-content-item">
+                      <img
+                        class="popover-image"
+                        src="images/catalog/catalog-bubble-gum.jpg"
+                        width="46px"
+                        height="46px"
+                        alt="мороженое со вкусом бабл-гам."
+                      />
+                      <div class="popover-text-container">
+                        <h3 class="popover-content-title">Бабл-гам</h3>
+                        <p class="popover-content-paragraph">1,5 кг х 320 ₽</p>
+                      </div>
+                      <strong class="popover-price">480 ₽</strong>
+                      <button class="popover-button"></button>
+                    </li>
+                  </ul>
+                  <form
+                    class="popover-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="get"
+                  >
+                    <button class="additional-button" type="submit">
+                      Оформить заказ
+                    </button>
+                    <label class="popover-label">
+                      Итого:
+                      <input class="cart-input" type="number" value="790" />
+                      ₽
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="popover-cart-empty popover">
+                <h2 class="popover-empty-title">Ваша корзина пока пуста</h2>
+                <button class="popover-close-button button-empty" type="button">
+                  Нет товаров
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
             </li>
           </ul>
         </nav>
@@ -66,12 +245,10 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
-            <li></li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Каталог</a>
             </li>
-            <li></li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-text-item">
               <span class="breadcrumbs-text">Сливочное мороженое</span>
             </li>
           </ul>
@@ -100,9 +277,47 @@
                 </select>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">
-                  Цена: 100 ₽ – 500 ₽
-                </legend>
+                <legend class="visually-hidden">Цена:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      Цена:
+                      <input
+                        class="range-input range-input-min"
+                        type="number"
+                        value="100"
+                        name="min-price"
+                      />
+                      ₽ -
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input
+                        class="range-input range-input-max"
+                        type="number"
+                        value="1500"
+                        name="max-price"
+                        style="width: 37px"
+                      />
+                      ₽
+                    </label>
+                  </div>
+                </div>
+                <div class="range-background">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 40px; width: 56px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden"
+                          >Изменить минимальную цену.</span
+                        >
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden"
+                          >Изменить максимальную цену.</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Жирность:</legend>
@@ -110,46 +325,50 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input visually-hidden"
                         type="radio"
                         name="product-group"
                         value="zero"
                       />
-                      0%
+                      <span class="control-mark"></span>
+                      <span class="control-label">0%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input visually-hidden"
                         type="radio"
                         name="product-group"
                         value="ten"
                         checked
                       />
-                      до 10%
+                      <span class="control-mark"></span>
+                      <span class="control-label">до 10%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input visually-hidden"
                         type="radio"
                         name="product-group"
                         value="thirty"
                       />
-                      до 30%
+                      <span class="control-mark"></span>
+                      <span class="control-label">до 30%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input visually-hidden"
                         type="radio"
                         name="product-group"
                         value="over-thirty"
                       />
-                      выше 30%
+                      <span class="control-mark"></span>
+                      <span class="control-label">выше 30%</span>
                     </label>
                   </li>
                 </ul>
@@ -158,64 +377,67 @@
             <div class="catalog-filter-button">
               <fieldset class="fillers">
                 <legend class="catalog-filter-title">Наполнители:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list filter-fillers">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="chocolate"
                         checked
                       />
-                      шоколадные
+                      <span class="control-mark"></span>
+                      <span class="control-label">шоколадные</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="sugar-sprinkle"
                         checked
                       />
-                      сахарные посыпки
+                      <span class="control-mark"></span>
+                      <span class="control-label"> сахарные посыпки</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="fruit"
                       />
-                      фрукты
+                      <span class="control-mark"></span>
+                      <span class="control-label"> фрукты</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="syrups"
                       />
-                      сиропы
+                      <span class="control-mark"></span>
+                      <span class="control-label"> сиропы</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="jams"
                       />
-                      джемы
+                      <span class="control-mark"></span>
+                      <span class="control-label"> джемы</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="button filter-button" type="submit">
-                Применить
-              </button>
+              <button class="filter-button" type="submit">Применить</button>
             </div>
           </form>
           <ul class="product-list-catalog">
@@ -235,7 +457,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">310 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -256,7 +478,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">340 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -275,7 +497,7 @@
               <p class="product-paragraph">Крем-брюле с черничным джемом</p>
               <div class="product-card-container">
                 <strong class="product-card-price">330 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -296,7 +518,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">320 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -317,7 +539,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">330 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -338,7 +560,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">340 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -357,7 +579,7 @@
               <p class="product-paragraph">Классический шоколадный пломбир</p>
               <div class="product-card-container">
                 <strong class="product-card-price">270 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -378,7 +600,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">300 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -397,7 +619,7 @@
               <p class="product-paragraph">Освежающий лимонный сорбет</p>
               <div class="product-card-container">
                 <strong class="product-card-price">310 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -418,7 +640,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">320 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -439,7 +661,7 @@
               </p>
               <div class="product-card-container">
                 <strong class="product-card-price">360 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -458,7 +680,7 @@
               <p class="product-paragraph">Классическое крем-брюле</p>
               <div class="product-card-container">
                 <strong class="product-card-price">280 ₽/кг</strong>
-                <a class="product-card-button button" href="#">
+                <a class="product-card-button" href="#">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </a>
               </div>
@@ -468,7 +690,7 @@
         <section>
           <div class="pagination-container">
             <h2 class="visually-hidden">Пагинация</h2>
-            <button class="catalog-button" type="button">Показать еще</button>
+            <button class="main-button" type="button">Показать еще</button>
             <div class="pagination-list">
               <a class="catalog-navigation-link" href="#">
                 <div class="catalog-navigation-left"></div>
@@ -476,19 +698,19 @@
               </a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation-item">
-                  <a class="circle pagination-namber" href="#">1</a>
+                  <a class="circle-pagination-number" href="#">1</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">2</a>
+                  <a class="pagination-number" href="#">2</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">3</a>
+                  <a class="pagination-number" href="#">3</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">4</a>
+                  <a class="pagination-number" href="#">4</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a class="pagination-namber" href="#">5</a>
+                  <a class="pagination-number" href="#">5</a>
                 </li>
               </ul>
               <a class="catalog-navigation-link" href="#">
@@ -529,23 +751,16 @@
         </nav>
         <nav class="copyright">
           <ul class="copyright-list">
-            <li class="copyright-item suppliers-item">
-              <img
-                class="suppliers-image"
-                src="images/icon/heart.svg"
-                width="13px"
-                height="12px"
-                alt="сердце."
-              />
-              <a class="copyright-link suppliers" href="#">Для поставщиков</a>
+            <li class="heart-item">
+              <a class="copyright-link heart-link" href="#">Для поставщиков</a>
             </li>
-            <li class="copyright-item documentation-item">
+            <li>
               <a class="copyright-link" href="#">Наши документы</a>
             </li>
-            <li class="copyright-item production-item">
+            <li class="production">
               <a class="copyright-link" href="#">О производстве</a>
             </li>
-            <li class="copyright-item standards-item">
+            <li>
               <a class="copyright-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
