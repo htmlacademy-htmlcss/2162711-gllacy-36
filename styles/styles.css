@@ -130,11 +130,11 @@ body {
   fill: #2d3440;
 }
 
-.navigation-basket:focus .basket-icon {
+.popover-closed:focus .basket-icon {
   left: 14px;
 }
 
-.navigation-basket:active .basket-icon {
+.popover-closed:active .basket-icon {
   left: 16px;
 }
 
@@ -162,10 +162,9 @@ body {
   fill: #2d3440;
 }
 
-.arrow-left:active {
+.gallery-link:active .arrow-left {
   background-color: rgba(252, 252, 252, 0.5);
-  padding: 11px;
-  border: none;
+  border: 2px solid rgb(252, 252, 252, 0);
   fill: #2d3440;
 }
 
@@ -194,10 +193,9 @@ body {
   outline: none;
 }
 
-.arrow-right:active {
+.gallery-link:active .arrow-right {
   background-color: rgba(252, 252, 252, 0.5);
-  padding: 11px;
-  border: none;
+  border: 2px solid rgb(252, 252, 252, 0);
   fill: #2d3440;
 }
 
@@ -552,18 +550,6 @@ body {
 .address-paragraph {
   display: block;
   margin: 0;
-}
-
-.address-paragraph::after {
-  display: inline-block;
-  content: "";
-  background-image: url("../images/icon/union.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 14px;
-  margin-left: 4px;
-  background-size: cover;
 }
 
 .info {
